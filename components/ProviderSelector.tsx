@@ -84,7 +84,7 @@ export function ProviderSelector() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -6, scale: 0.97 }}
               transition={{ duration: 0.14, ease: "easeOut" }}
-              className="absolute right-0 top-8 z-50 w-80 rounded-xl border border-border bg-background/95 backdrop-blur-md shadow-2xl p-4"
+              className="absolute right-0 top-8 z-50 w-[min(320px,calc(100vw-2rem))] rounded-xl border border-border bg-background/95 backdrop-blur-md shadow-2xl p-4"
             >
               {/* Header */}
               <div className="flex items-center justify-between mb-4">

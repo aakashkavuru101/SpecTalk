@@ -49,7 +49,7 @@ export function TranslatorInput({
           disabled={isLoading}
           rows={4}
           maxLength={1000}
-          className="resize-none bg-card/50 border-border focus:border-primary/50 text-foreground placeholder:text-muted-foreground/50 font-[family-name:var(--font-dm-sans)] text-base leading-relaxed pr-4 pb-10 transition-colors"
+          className="resize-none bg-card/50 border-border focus:border-primary/50 text-foreground placeholder:text-muted-foreground/50 font-[family-name:var(--font-dm-sans)] text-sm sm:text-base leading-relaxed pr-4 pb-10 transition-colors min-h-[100px]"
         />
         <div className="absolute bottom-3 right-3 flex items-center gap-2">
           <span className="text-xs text-muted-foreground/40">{value.length}/1000</span>

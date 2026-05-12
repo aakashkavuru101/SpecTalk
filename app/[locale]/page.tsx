@@ -10,6 +10,7 @@ import { TranslatorInput } from "@/components/TranslatorInput";
 import { OutputPanel } from "@/components/OutputPanel";
 import { HistoryPanel } from "@/components/HistoryPanel";
 import { ProviderSelector } from "@/components/ProviderSelector";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { useTranslator } from "@/hooks/useTranslator";
 
 export default function Home() {
@@ -32,12 +33,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 border-b border-border/40 bg-background/80 backdrop-blur-md">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-border/40 bg-background/80 backdrop-blur-md">
         <span className="font-[family-name:var(--font-sora)] font-semibold text-sm tracking-tight text-foreground">
           {t("tagline")}
         </span>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4">
           <ProviderSelector />
+          <LocaleSwitcher />
           <a
             href="https://github.com/aakashkavuru101/SpecTalk"
             target="_blank"
@@ -45,7 +47,7 @@ export default function Home() {
             className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
           >
             <GitFork size={14} />
-            {t("github")}
+            <span className="hidden sm:inline">{t("github")}</span>
           </a>
         </div>
       </nav>
@@ -92,9 +94,9 @@ export default function Home() {
       </section>
 
       {/* Translator section */}
-      <section id="translator" className="max-w-5xl mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main column — 60% */}
+      <section id="translator" className="max-w-5xl mx-auto px-4 py-12 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+          {/* Main column */}
           <div className="lg:col-span-2 space-y-4">
             <ContextSelector context={context} onChange={setContext} />
             <TranslatorInput
@@ -107,8 +109,8 @@ export default function Home() {
             {output && <OutputPanel output={output} />}
           </div>
 
-          {/* History sidebar */}
-          <div className="lg:col-span-1">
+          {/* History sidebar — divider on mobile */}
+          <div className="lg:col-span-1 border-t border-border/40 pt-6 lg:border-0 lg:pt-0">
             <HistoryPanel entries={history} onClear={clearHistory} />
           </div>
         </div>
