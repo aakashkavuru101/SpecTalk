@@ -11,6 +11,7 @@ import { OutputPanel } from "@/components/OutputPanel";
 import { HistoryPanel } from "@/components/HistoryPanel";
 import { ProviderSelector } from "@/components/ProviderSelector";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { HowItWorks } from "@/components/HowItWorks";
 import { useTranslator } from "@/hooks/useTranslator";
 
 export default function Home() {
@@ -92,6 +93,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* How it works */}
+      <HowItWorks />
 
       {/* Translator section */}
       <section id="translator" className="max-w-5xl mx-auto px-4 py-12 md:py-20">
