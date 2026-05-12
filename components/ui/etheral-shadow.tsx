@@ -91,7 +91,7 @@ export function EtherealShadow({
   return (
     <div
       className={className}
-      style={{ overflow: 'hidden', position: 'relative', width: '100%', height: '100%', ...style }}
+      style={{ overflow: 'hidden', position: 'absolute', inset: 0, width: '100%', height: '100%', ...style }}
     >
       <div
         style={{
@@ -135,21 +135,6 @@ export function EtherealShadow({
             height: '100%',
           }}
         />
-      </div>
-
-      <div
-        style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          textAlign: 'center',
-          zIndex: 10,
-        }}
-      >
-        <h1 className="md:text-7xl text-6xl lg:text-8xl font-bold text-center text-foreground relative z-20">
-          Etheral Shadows
-        </h1>
       </div>
 
       {noise && noise.opacity > 0 && (

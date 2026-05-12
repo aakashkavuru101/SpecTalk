@@ -51,15 +51,14 @@ export default function Home() {
       </nav>
 
       {/* Hero 1 — Ethereal Shadow (full height) */}
-      <section className="h-screen w-full relative pt-16">
+      <section className="h-screen w-full relative">
         <EtherealShadow
           color="rgba(99, 102, 241, 0.8)"
           animation={{ scale: 100, speed: 90 }}
           noise={{ opacity: 1, scale: 1.2 }}
           sizing="fill"
-          className="absolute inset-0"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20 pt-16">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
