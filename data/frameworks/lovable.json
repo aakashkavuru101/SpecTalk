@@ -1,0 +1,13 @@
+{
+  "id": "lovable",
+  "name": "Lovable",
+  "version": "1",
+  "category": "ai-tool",
+  "vocab": {
+    "prompting": "Describe UI in design terms. Lovable excels at React + Tailwind + shadcn/ui interfaces.",
+    "backend": "Connect Supabase for auth, database, and storage. Describe tables in plain English — Lovable creates the schema.",
+    "iteration": "Select elements visually in the preview and describe changes inline. 'Make this card full-width' is more effective than editing code.",
+    "workflow": "Chat to build → live preview → push to GitHub → Supabase for backend. Sync project to keep code editable locally.",
+    "components": "Lovable uses shadcn/ui components. Reference them by name: 'add a Dialog here' or 'use a DataTable for this list'."
+  }
+}

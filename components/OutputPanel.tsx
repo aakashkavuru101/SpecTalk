@@ -81,6 +81,18 @@ export function OutputPanel({ output }: OutputPanelProps) {
           </div>
         </div>
 
+        {/* Plain-English summary for the non-dev */}
+        {output.summary && (
+          <div className="px-5 py-4 bg-indigo-500/5 border-b border-indigo-500/10">
+            <p className="text-[10px] text-indigo-400/70 uppercase tracking-wider font-medium mb-1.5">
+              What this does
+            </p>
+            <p className="text-sm text-foreground/90 leading-relaxed font-[family-name:var(--font-dm-sans)]">
+              {output.summary}
+            </p>
+          </div>
+        )}
+
         {/* Spec output — monospace, prominent */}
         <div className="px-5 py-5">
           <pre className="font-mono text-sm leading-relaxed text-foreground whitespace-pre-wrap break-words">

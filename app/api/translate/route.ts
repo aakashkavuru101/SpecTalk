@@ -7,23 +7,20 @@ import type { TechContext, SupportedLocale, ProviderId } from "@/types";
 
 const SUPPORTED_LOCALES = new Set<string>(["en", "ja", "es", "fr"]);
 const VALID_FRONTEND = new Set([
-  "next15",
-  "react19",
-  "vue3",
-  "svelte5",
-  "vanilla",
+  "next15", "react19", "vue3", "nuxt3", "svelte5",
+  "remix", "astro", "angular", "react-native", "vanilla",
 ]);
 const VALID_BACKEND = new Set([
-  "python-fastapi",
-  "nodejs-express",
-  "nodejs-hono",
+  "python-fastapi", "python-django", "nodejs-express",
+  "nodejs-hono", "golang", "ruby-rails", "dotnet", "bun",
 ]);
-const VALID_DATABASE = new Set(["supabase", "postgresql", "mongodb", "mysql"]);
+const VALID_DATABASE = new Set([
+  "supabase", "postgresql", "mongodb", "mysql",
+  "firebase", "redis", "sqlite", "prisma",
+]);
 const VALID_AI_TOOL = new Set([
-  "claude-code",
-  "cursor",
-  "v0",
-  "github-copilot",
+  "claude-code", "cursor", "windsurf", "v0",
+  "bolt", "lovable", "replit", "github-copilot",
 ]);
 const VALID_PROVIDERS = new Set<ProviderId>([
   "anthropic",

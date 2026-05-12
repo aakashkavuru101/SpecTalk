@@ -1,0 +1,13 @@
+{
+  "id": "astro",
+  "name": "Astro",
+  "version": "4",
+  "category": "frontend",
+  "vocab": {
+    "components": "Use .astro files for zero-JS static output. Add client:load, client:idle, or client:visible directives for interactive components.",
+    "api": "Server endpoints in src/pages/api/*.ts. Export GET, POST, etc. handlers using APIContext type.",
+    "loading": "Partial hydration with client:visible for below-fold components. Static pages are instant by default.",
+    "database": "Astro DB (@astrojs/db) for local SQLite with type-safe schema. defineTable + column helpers.",
+    "content": "Content Collections for Markdown/MDX. defineCollection with Zod schema. getCollection() for type-safe queries."
+  }
+}

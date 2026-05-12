@@ -1,0 +1,13 @@
+{
+  "id": "dotnet",
+  "name": ".NET",
+  "version": "8",
+  "category": "backend",
+  "vocab": {
+    "api": "Minimal APIs: app.MapGet/MapPost with lambda handlers. Controller APIs: [ApiController] + [Route] attributes. IResult return types.",
+    "database": "Entity Framework Core. DbContext with DbSet<T> properties. Migrations: dotnet ef migrations add + update.",
+    "authentication": "ASP.NET Core Identity for user management. AddJwtBearer for API auth. [Authorize] attribute or RequireAuthorization().",
+    "validation": "FluentValidation or data annotations. ModelState.IsValid in controllers. IValidator<T> injected into endpoints.",
+    "async": "async Task<IResult> throughout. CancellationToken parameter for request cancellation. IAsyncEnumerable<T> for streaming."
+  }
+}

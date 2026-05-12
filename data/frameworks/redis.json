@@ -1,0 +1,13 @@
+{
+  "id": "redis",
+  "name": "Redis",
+  "version": "7",
+  "category": "database",
+  "vocab": {
+    "cache": "SET key value EX seconds. GET key. Cache-aside: check Redis → on miss, fetch DB → SET result. HSET/HGET for structured data.",
+    "sessions": "SETEX session_id ttl serialized_json. Use ioredis with connect-redis for Express session middleware.",
+    "queue": "BullMQ library (recommended over raw Redis). new Queue('name'). new Worker('name', processor). Automatic retries and DLQ.",
+    "pubsub": "PUBLISH channel message. SUBSCRIBE channel. Use separate ioredis connections for pub and sub.",
+    "rate-limiting": "INCR key + EXPIRE key seconds. Or sliding window with ZADD + ZCOUNT. ioredis-rate-limiter-flexible library."
+  }
+}

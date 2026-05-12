@@ -1,0 +1,13 @@
+{
+  "id": "windsurf",
+  "name": "Windsurf",
+  "version": "1",
+  "category": "ai-tool",
+  "vocab": {
+    "cascade": "Use Cascade for multi-file changes. Describe the full feature — Cascade plans and executes across files.",
+    "context": "Windsurf indexes your entire codebase. Reference patterns: 'implement this similarly to how X is done in Y file'.",
+    "inline": "Ctrl+I for inline edits on selected code. Best for targeted changes to existing functions.",
+    "debugging": "Share the exact error message and stack trace. Describe expected vs actual behavior. Windsurf reads your terminal output.",
+    "scope": "Specify boundaries clearly: 'only change the auth module, do not modify the database schema'."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "golang",
+  "name": "Go",
+  "version": "1.22",
+  "category": "backend",
+  "vocab": {
+    "api": "net/http standard library or chi router. Handler: func(w http.ResponseWriter, r *http.Request). JSON: json.NewEncoder(w).Encode().",
+    "database": "database/sql + pgx driver for PostgreSQL. sqlc for type-safe query generation from .sql files.",
+    "authentication": "golang-jwt/jwt v5. Middleware pattern: next http.Handler wrapping. Context values for user propagation.",
+    "error": "Explicit error returns. fmt.Errorf with %w for wrapping. errors.Is() and errors.As() for inspection.",
+    "concurrency": "goroutines with go keyword. sync.WaitGroup for fan-out. channels for typed communication. context.WithCancel for cancellation."
+  }
+}

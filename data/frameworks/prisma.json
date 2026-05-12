@@ -1,0 +1,13 @@
+{
+  "id": "prisma",
+  "name": "Prisma",
+  "version": "5",
+  "category": "database",
+  "vocab": {
+    "schema": "schema.prisma: model User { id Int @id @default(autoincrement()) }. prisma generate after changes.",
+    "query": "prisma.user.findMany({ where, select, include, orderBy, skip, take }). prisma.user.create({ data }). prisma.user.update({ where, data }).",
+    "relations": "include: { posts: true } for eager loading. select: { id: true, name: true } for projection. Nested writes for relations.",
+    "migrations": "prisma migrate dev for development (creates + runs migration). prisma migrate deploy for production CI.",
+    "transactions": "await prisma.$transaction([op1, op2]) for batch. await prisma.$transaction(async (tx) => { ... }) for interactive."
+  }
+}

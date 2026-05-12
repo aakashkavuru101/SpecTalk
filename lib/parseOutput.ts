@@ -11,6 +11,7 @@ export function parseOutput(raw: string): SpecOutput {
     parsed = JSON.parse(stripped);
   } catch {
     return {
+      summary: "",
       spec: raw,
       terms: [],
       scope: "medium",
@@ -19,11 +20,12 @@ export function parseOutput(raw: string): SpecOutput {
   }
 
   if (typeof parsed !== "object" || parsed === null) {
-    return { spec: raw, terms: [], scope: "medium", copyReady: raw };
+    return { summary: "", spec: raw, terms: [], scope: "medium", copyReady: raw };
   }
 
   const obj = parsed as Record<string, unknown>;
 
+  const summary = typeof obj.summary === "string" ? obj.summary : "";
   const spec = typeof obj.spec === "string" ? obj.spec : String(obj.spec ?? raw);
   const copyReady =
     typeof obj.copyReady === "string" ? obj.copyReady : String(obj.copyReady ?? spec);
@@ -42,5 +44,5 @@ export function parseOutput(raw: string): SpecOutput {
     )
     .map((t) => ({ term: t.term, definition: t.definition }));
 
-  return { spec, terms, scope, copyReady };
+  return { summary, spec, terms, scope, copyReady };
 }

@@ -1,0 +1,13 @@
+{
+  "id": "firebase",
+  "name": "Firebase",
+  "version": "10",
+  "category": "database",
+  "vocab": {
+    "database": "Firestore (NoSQL). Collections → Documents → Fields. addDoc/setDoc/updateDoc/deleteDoc from firebase/firestore.",
+    "realtime": "onSnapshot(query, callback) for live updates. Unsubscribe by calling the returned function in cleanup.",
+    "authentication": "getAuth(). signInWithPopup for OAuth. onAuthStateChanged listener. currentUser for session check.",
+    "storage": "getStorage(). ref(storage, path). uploadBytes then getDownloadURL. Security Rules for access control.",
+    "query": "query(collection, where('field','==',value), orderBy('field'), limit(n)). Compound queries need composite indexes."
+  }
+}

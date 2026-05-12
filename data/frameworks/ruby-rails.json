@@ -1,0 +1,13 @@
+{
+  "id": "ruby-rails",
+  "name": "Ruby on Rails",
+  "version": "7",
+  "category": "backend",
+  "vocab": {
+    "api": "Rails API mode. resources :items in routes.rb. Respond with render json: @item, status: :ok. Namespace under api/v1.",
+    "database": "ActiveRecord ORM. includes(:association) for eager loading. scope for reusable query chains. add_index migration for performance.",
+    "authentication": "Devise gem. JWT API auth with devise-jwt. before_action :authenticate_user! to protect controllers.",
+    "search": "ransack gem: @q = Model.ransack(params[:q]). pg_search for PostgreSQL full-text. Pagy for pagination.",
+    "background": "Sidekiq with Redis. Class inherits ApplicationJob (ActiveJob). perform_later for async, perform_now for sync."
+  }
+}

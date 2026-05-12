@@ -1,0 +1,13 @@
+{
+  "id": "bolt",
+  "name": "Bolt",
+  "version": "1",
+  "category": "ai-tool",
+  "vocab": {
+    "prompting": "Describe the feature and its UI in concrete terms. Mention component names if they exist.",
+    "stack": "Bolt defaults to React + Vite + Tailwind. Specify if you need a different stack upfront.",
+    "iteration": "Use targeted feedback: 'the submit button should be full-width on mobile'. Avoid vague: 'make it better'.",
+    "workflow": "Build in Bolt → export to GitHub → continue in a local editor for production work.",
+    "deployment": "One-click deploy to Netlify from the Bolt interface. Custom domain via Netlify settings."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "remix",
+  "name": "Remix",
+  "version": "2",
+  "category": "frontend",
+  "vocab": {
+    "loading": "Use useNavigation().state for pending UI. Deferred data with defer() + Await component + React Suspense fallback.",
+    "forms": "Use <Form> component for progressive enhancement. Action functions handle POST. useActionData() returns action result.",
+    "api": "loader() for GET data fetching. action() for mutations. Both run server-side in the same route file.",
+    "authentication": "Session storage with createCookieSessionStorage. commitSession/destroySession in loader/action.",
+    "error": "ErrorBoundary export per route for error isolation. useRouteError() to access thrown errors or responses."
+  }
+}

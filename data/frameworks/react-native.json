@@ -1,0 +1,13 @@
+{
+  "id": "react-native",
+  "name": "React Native",
+  "version": "0.73",
+  "category": "frontend",
+  "vocab": {
+    "navigation": "React Navigation v6. createNativeStackNavigator for screens. useNavigation() + useRoute() hooks.",
+    "loading": "ActivityIndicator for spinners. FlatList with ListFooterComponent for paginated loading. Skeleton placeholders via react-native-skeleton-placeholder.",
+    "storage": "AsyncStorage for simple key-value. MMKV (react-native-mmkv) for performance-critical data. Zustand + MMKV for global state persistence.",
+    "api": "fetch() built-in. React Query (TanStack) for server state, caching, and background refetch.",
+    "layout": "Flexbox only. StyleSheet.create() for performance. react-native-safe-area-context for notch/home indicator."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "python-django",
+  "name": "Django",
+  "version": "5",
+  "category": "backend",
+  "vocab": {
+    "api": "Django REST Framework: ModelViewSet for CRUD. Serializers for validation + serialization. DefaultRouter for URL registration.",
+    "authentication": "simplejwt: TokenObtainPairView + TokenRefreshView. IsAuthenticated permission class. Custom permissions extend BasePermission.",
+    "database": "Django ORM. select_related() for FK joins, prefetch_related() for M2M to avoid N+1. F() expressions for atomic updates.",
+    "search": "Q objects for complex queries. django-filter for DRF query param filtering. SearchVector + SearchQuery for full-text search.",
+    "async": "async def views with Django 4.1+. sync_to_async/async_to_sync wrappers for ORM in async context."
+  }
+}

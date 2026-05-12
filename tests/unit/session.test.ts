@@ -9,6 +9,7 @@ function makeEntry(id: string): SessionEntry {
     id,
     input: `input ${id}`,
     output: {
+      summary: "A plain-English explanation.",
       spec: "spec",
       terms: [],
       scope: "small",

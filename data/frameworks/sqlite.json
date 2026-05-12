@@ -1,0 +1,13 @@
+{
+  "id": "sqlite",
+  "name": "SQLite",
+  "version": "3",
+  "category": "database",
+  "vocab": {
+    "setup": "Single .db file. better-sqlite3 (Node, sync API). WAL mode (PRAGMA journal_mode=WAL) for concurrent reads.",
+    "orm": "Drizzle ORM: drizzle(db, { schema }). Type-safe schema with sqliteTable + text/integer/real columns.",
+    "migrations": "drizzle-kit generate then drizzle-kit migrate. Or drizzle-kit push for development.",
+    "query": "Standard SQL with tagged template literals via Drizzle. Prepared statements for repeated queries.",
+    "production": "Turso (libSQL) for distributed edge SQLite. Same Drizzle schema, swap driver to @libsql/client."
+  }
+}

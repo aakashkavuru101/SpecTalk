@@ -1,0 +1,13 @@
+{
+  "id": "replit",
+  "name": "Replit",
+  "version": "1",
+  "category": "ai-tool",
+  "vocab": {
+    "agent": "Replit Agent builds full apps from descriptions. Describe the feature with input/output examples for best results.",
+    "stack": "Defaults to Python (Flask/FastAPI) or Node.js. Specify your preferred language/framework explicitly.",
+    "database": "Replit Database (key-value, built-in). PostgreSQL via the Database extension tab.",
+    "workflow": "Agent writes → auto-runs in container → preview in browser tab → iterate with follow-up prompts.",
+    "deployment": "Replit Deployments: Reserved VM (always-on) or Autoscale. Custom domain support with paid plan."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "angular",
+  "name": "Angular",
+  "version": "17",
+  "category": "frontend",
+  "vocab": {
+    "components": "Standalone components with signals. OnPush change detection for performance. inject() function instead of constructor injection.",
+    "loading": "@defer (on viewport) { <HeavyComponent /> } @placeholder { <Skeleton /> } @loading { <Spinner /> }",
+    "api": "HttpClient with typed observables. Interceptors for auth headers. takeUntilDestroyed() for automatic cleanup.",
+    "forms": "Reactive forms with FormBuilder. signal-based form controls in Angular 17+. AsyncValidators for server-side checks.",
+    "routing": "RouterLink directive. Route guards with canActivate functional guards. Lazy-loaded routes with loadComponent."
+  }
+}

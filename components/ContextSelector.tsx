@@ -8,17 +8,27 @@ import { Badge } from "@/components/ui/badge";
 import type { TechContext } from "@/types";
 
 const FRONTEND_OPTIONS = [
-  { id: "next15", label: "Next.js 15" },
+  { id: "next15", label: "Next.js" },
   { id: "react19", label: "React 19" },
   { id: "vue3", label: "Vue 3" },
+  { id: "nuxt3", label: "Nuxt 3" },
   { id: "svelte5", label: "Svelte 5" },
+  { id: "remix", label: "Remix" },
+  { id: "astro", label: "Astro" },
+  { id: "angular", label: "Angular" },
+  { id: "react-native", label: "React Native" },
   { id: "vanilla", label: "Vanilla JS" },
 ];
 
 const BACKEND_OPTIONS = [
   { id: "python-fastapi", label: "FastAPI" },
+  { id: "python-django", label: "Django" },
   { id: "nodejs-express", label: "Express" },
   { id: "nodejs-hono", label: "Hono" },
+  { id: "golang", label: "Go" },
+  { id: "ruby-rails", label: "Rails" },
+  { id: "dotnet", label: ".NET" },
+  { id: "bun", label: "Bun" },
 ];
 
 const DATABASE_OPTIONS = [
@@ -26,12 +36,20 @@ const DATABASE_OPTIONS = [
   { id: "postgresql", label: "PostgreSQL" },
   { id: "mongodb", label: "MongoDB" },
   { id: "mysql", label: "MySQL" },
+  { id: "firebase", label: "Firebase" },
+  { id: "redis", label: "Redis" },
+  { id: "sqlite", label: "SQLite" },
+  { id: "prisma", label: "Prisma" },
 ];
 
 const AI_TOOL_OPTIONS = [
   { id: "claude-code", label: "Claude Code" },
   { id: "cursor", label: "Cursor" },
+  { id: "windsurf", label: "Windsurf" },
   { id: "v0", label: "v0" },
+  { id: "bolt", label: "Bolt" },
+  { id: "lovable", label: "Lovable" },
+  { id: "replit", label: "Replit" },
   { id: "github-copilot", label: "Copilot" },
 ];
 

@@ -31,6 +31,7 @@ export type TechContext = {
 };
 
 export type SpecOutput = {
+  summary: string;
   spec: string;
   terms: { term: string; definition: string }[];
   scope: "small" | "medium" | "large";

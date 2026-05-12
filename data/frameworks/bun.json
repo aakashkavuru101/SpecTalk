@@ -1,0 +1,13 @@
+{
+  "id": "bun",
+  "name": "Bun",
+  "version": "1",
+  "category": "backend",
+  "vocab": {
+    "server": "Bun.serve({ fetch(req) { return new Response(...) } }). Or Elysia framework for typed routing with .get/.post.",
+    "database": "bun:sqlite built-in. import { Database } from 'bun:sqlite'. Drizzle ORM with drizzle-orm/bun-sqlite driver.",
+    "api": "Elysia: new Elysia().get('/path', handler).post('/path', handler). t.Body() schema for validation.",
+    "testing": "bun test built-in. describe/test/expect API compatible with Jest. bun test --watch for TDD.",
+    "performance": "Bun bundles and transpiles TypeScript natively. No tsc step needed. SQLite runs in-process for zero network latency."
+  }
+}

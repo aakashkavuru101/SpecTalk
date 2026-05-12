@@ -1,0 +1,13 @@
+{
+  "id": "nuxt3",
+  "name": "Nuxt",
+  "version": "3",
+  "category": "frontend",
+  "vocab": {
+    "data": "useFetch() for SSR-aware data fetching. useAsyncData() for custom async logic. pending/error/data destructuring.",
+    "api": "Server routes in server/api/*.ts. defineEventHandler with getQuery, readBody, createError helpers.",
+    "authentication": "nuxt-auth-utils: useUserSession() composable. requireUserSession() server-side guard.",
+    "loading": "useLazyFetch() for deferred loading. Nuxt's built-in loading bar. NuxtLoadingIndicator component.",
+    "state": "useState() composable for SSR-safe shared state. Pinia for complex stores with useStore() pattern."
+  }
+}
