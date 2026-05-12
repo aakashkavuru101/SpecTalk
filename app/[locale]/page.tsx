@@ -94,6 +94,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Demo video */}
+      <section className="relative py-16 md:py-20 bg-black">
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-center text-xs font-mono text-indigo-400/60 uppercase tracking-widest mb-6">
+            See it in action
+          </p>
+          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-indigo-500/10">
+            <video
+              src="/video/demo.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-auto block"
+              style={{ aspectRatio: "16/9" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <HowItWorks />
 
