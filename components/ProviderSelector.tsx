@@ -29,6 +29,8 @@ export function ProviderSelector() {
   });
 
   useEffect(() => {
+    // localStorage is unavailable during SSR; reading it here is intentional.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setSettings(getProviderSettings());
   }, []);
 
