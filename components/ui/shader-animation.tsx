@@ -109,7 +109,7 @@ export function ShaderAnimation() {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen"
+      className="w-full h-full"
       style={{ background: "#000", overflow: "hidden" }}
     />
   )
