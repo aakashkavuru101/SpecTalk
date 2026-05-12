@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 import Anthropic from "@anthropic-ai/sdk";
 import OpenAI from "openai";
 import { GoogleGenerativeAI } from "@google/generative-ai";
