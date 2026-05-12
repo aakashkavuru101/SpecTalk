@@ -1,0 +1,15 @@
+{
+  "id": "vue3",
+  "name": "Vue",
+  "version": "3",
+  "category": "frontend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "search": "Implement search with a computed property using Vue 3 Composition API. Use ref() for the search query, watchEffect() to trigger API calls with debouncing via useDebouncedRef or VueUse's useDebounceFn.",
+    "loading": "Use v-if with a reactive isLoading ref. For async components, use defineAsyncComponent with the loadingComponent option. Suspense is supported experimentally in Vue 3.",
+    "authentication": "Use Pinia store for auth state. Persist tokens in httpOnly cookies via server, not localStorage. Use navigation guards in Vue Router (router.beforeEach) to protect routes.",
+    "api": "Use the Composition API with useFetch composable from VueUse, or Axios. Centralize API calls in composables in /src/composables/use[Feature].ts.",
+    "state": "Use Pinia for shared state — it is the official Vue 3 state management library. Define stores with defineStore(). Avoid Vuex for new projects."
+  }
+}

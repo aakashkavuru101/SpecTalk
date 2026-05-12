@@ -1,0 +1,15 @@
+{
+  "id": "github-copilot",
+  "name": "GitHub Copilot",
+  "version": "current",
+  "category": "ai-tool",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "prompt": "Copilot works best with precise function signatures and JSDoc comments as context. Write the function name, parameters, and a comment describing the behavior — Copilot completes the body. Use Copilot Chat for multi-step tasks.",
+    "context": "Copilot reads all open files as context. Keep relevant files open in tabs. Use .github/copilot-instructions.md to give persistent project instructions. Copilot respects your existing code style from open files.",
+    "workflow": "For new features: write a comment block describing what you want, then let Copilot autocomplete. Press Tab to accept, Esc to reject. Cycle through suggestions with Alt+]. Use Copilot Chat (Ctrl+I) for larger changes.",
+    "review": "Always review Copilot suggestions — it generates plausible but sometimes incorrect code. Never accept API calls to libraries you have not verified are installed. Run tests after accepting suggestions.",
+    "chat": "In Copilot Chat, use /fix for bug fixes, /explain for code explanations, /tests to generate tests, /doc to generate documentation. Use @workspace to ask questions about your entire project."
+  }
+}

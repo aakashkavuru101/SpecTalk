@@ -1,0 +1,15 @@
+{
+  "id": "nodejs-express",
+  "name": "Node.js + Express",
+  "version": "Express 5",
+  "category": "backend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "api": "Define routes with app.get(), app.post(), etc. or use express.Router() for modular routing. Express 5 supports async route handlers natively — errors from rejected promises are passed to error middleware automatically.",
+    "authentication": "Use passport.js with passport-jwt for JWT auth, or jsonwebtoken directly. Set tokens in httpOnly cookies via res.cookie(). Use middleware functions for route protection.",
+    "database": "Use Prisma ORM for type-safe queries with any SQL database. For MongoDB, use Mongoose. Use connection pooling — Prisma manages this automatically.",
+    "validation": "Use zod for runtime validation of request bodies and query params. Define schemas with z.object() and validate with schema.parse() or schema.safeParse().",
+    "middleware": "Express middleware executes in order. Use express.json() for body parsing, cors() for CORS, helmet() for security headers. Error-handling middleware takes 4 args: (err, req, res, next)."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nodejs-hono",
+  "name": "Hono",
+  "version": "4",
+  "category": "backend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "api": "Define routes with app.get(), app.post(), etc. Use Hono's c.json() for JSON responses. Hono runs on any JS runtime — Cloudflare Workers, Node.js, Deno, Bun. Use app.route() for modular routing.",
+    "authentication": "Use Hono's built-in bearerAuth() middleware for Bearer token validation, or implement JWT validation with hono/jwt. For sessions, use cookies via getCookie/setCookie from hono/cookie.",
+    "validation": "Use Zod Validator middleware (@hono/zod-validator). Define a schema with z.object() and apply with zValidator('json', schema) as route middleware. Invalid requests are rejected automatically.",
+    "middleware": "Hono middleware uses the same handler signature as routes. Apply globally with app.use() or per-route. Built-in: logger(), cors(), compress(), secureHeaders().",
+    "performance": "Hono is optimized for Edge runtimes. Use Hono's built-in router (TrieRouter or RegExpRouter) — no config needed. For Cloudflare Workers deployment, use wrangler.toml with entry point index.ts."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "react19",
+  "name": "React",
+  "version": "19",
+  "category": "frontend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "search": "Implement search using React 19 use() hook for async data fetching. Client-side filtering: useDeferredValue + useMemo for large lists. Server-side: pass search params as props from server components.",
+    "loading": "Use Suspense boundaries with fallback UI. React 19 supports async components natively — await data in server components, wrap client data-dependent components in Suspense.",
+    "authentication": "Use React context for auth state on the client. Persist session in httpOnly cookies set by server. Do not store tokens in localStorage.",
+    "forms": "Use React 19 useActionState() and useFormStatus() for form state and pending state. Pair with server actions for zero-client-JS form submissions.",
+    "state": "For local state: useState + useReducer. For server state: use() + Suspense. For shared state: React Context or Zustand (lightweight). Avoid Redux for new projects unless migrating."
+  }
+}

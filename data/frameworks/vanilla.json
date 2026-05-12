@@ -1,0 +1,15 @@
+{
+  "id": "vanilla",
+  "name": "Vanilla JS",
+  "version": "ES2024",
+  "category": "frontend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "search": "Implement search using the native filter() array method and input event listeners. For API-backed search, use fetch() with AbortController to cancel stale requests. Debounce with setTimeout.",
+    "loading": "Toggle a CSS class (e.g. .is-loading) or use the disabled attribute. Use the HTML dialog element or a CSS-only spinner. Avoid third-party libraries for simple loading states.",
+    "authentication": "Use httpOnly cookies set by the server. Read auth state via a /me or /session API endpoint. Do not store tokens in localStorage — it is accessible to any script on the page.",
+    "api": "Use the native fetch() API with async/await. Handle errors by checking response.ok. Use AbortController for request cancellation. For complex cases, group API calls in a dedicated api.js module.",
+    "dom": "Use querySelector and querySelectorAll for DOM selection. Use addEventListener for events. Prefer data attributes (data-*) for state. Avoid innerHTML where possible — use textContent or createElement."
+  }
+}

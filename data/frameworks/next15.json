@@ -1,0 +1,15 @@
+{
+  "id": "next15",
+  "name": "Next.js",
+  "version": "15",
+  "category": "frontend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "search": "Implement using Next.js 15 Server Actions with useActionState hook. For client-side filtering, use useDeferredValue for performance.",
+    "loading": "Use React Suspense boundaries with loading.tsx files in App Router. For API-dependent data, implement streaming with Suspense.",
+    "authentication": "Implement using NextAuth v5 (Auth.js). Session management via server-side cookies.",
+    "database": "Use Prisma ORM with connection pooling via PgBouncer for serverless environments.",
+    "api": "Create Route Handlers in /app/api/[route]/route.ts. Support GET, POST, PUT, DELETE. Use Edge Runtime for latency-sensitive endpoints."
+  }
+}

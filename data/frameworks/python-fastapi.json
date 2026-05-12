@@ -1,0 +1,15 @@
+{
+  "id": "python-fastapi",
+  "name": "FastAPI",
+  "version": "0.115",
+  "category": "backend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "api": "Define endpoints with @app.get(), @app.post(), etc. Use Pydantic models for request/response validation — FastAPI auto-generates OpenAPI docs from them. Use APIRouter for modular routing.",
+    "authentication": "Use FastAPI's OAuth2PasswordBearer for token-based auth. Validate JWTs using python-jose. Use Depends() for dependency injection of the current user into any route.",
+    "database": "Use SQLAlchemy 2.0 with async support (AsyncSession). Define models with SQLAlchemy ORM. Use Alembic for migrations. For simpler projects, SQLModel (combines SQLAlchemy + Pydantic) is recommended.",
+    "background": "Use FastAPI BackgroundTasks for fire-and-forget tasks. For heavy workloads or retries, use Celery with Redis as broker.",
+    "validation": "Pydantic v2 models handle all input validation automatically. Define Field() constraints for min/max length, regex patterns, etc. Use model_validator for cross-field validation."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "tagline": "言いたいことを、技術的に。",
+    "subtitle": "曖昧な機能リクエストを、AIコーディングツールにそのまま貼り付けられる正確な技術仕様に変換します。"
+  },
+  "input": {
+    "placeholder": "作りたい機能を説明してください。例：「もっと速く読み込みたい」「検索を追加したい」",
+    "submit": "変換する",
+    "submitting": "変換中..."
+  },
+  "context": {
+    "title": "技術コンテキスト",
+    "description": "任意 — スタックを選択するとより正確な出力が得られます",
+    "frontend": "フロントエンド",
+    "backend": "バックエンド",
+    "database": "データベース",
+    "aiTool": "AIツール",
+    "none": "なし",
+    "toggle": "技術コンテキストを設定"
+  },
+  "output": {
+    "title": "技術仕様",
+    "copySpec": "仕様をコピー",
+    "copyPrompt": "AIプロンプトをコピー",
+    "copied": "コピーしました！",
+    "terms": "主要用語",
+    "scope": {
+      "label": "スコープ",
+      "small": "小",
+      "medium": "中",
+      "large": "大",
+      "smallHint": "数時間",
+      "mediumHint": "数日",
+      "largeHint": "数週間"
+    }
+  },
+  "history": {
+    "title": "セッション履歴",
+    "empty": "まだ変換がありません。セッション履歴はここに表示されます。",
+    "export": "セッションをエクスポート",
+    "clear": "セッションをクリア",
+    "copyItem": "コピー"
+  },
+  "nav": {
+    "language": "言語",
+    "github": "GitHub",
+    "tagline": "SpecTalk"
+  },
+  "errors": {
+    "empty": "機能リクエストを入力してください。",
+    "tooLong": "リクエストが長すぎます。1000文字以内にしてください。",
+    "apiError": "エラーが発生しました。もう一度お試しください。",
+    "timeout": "タイムアウトしました。もう一度お試しください。"
+  }
+}

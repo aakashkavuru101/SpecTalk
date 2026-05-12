@@ -1,0 +1,15 @@
+{
+  "id": "supabase",
+  "name": "Supabase",
+  "version": "2",
+  "category": "database",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "database": "Use the Supabase JS client: supabase.from('table').select(). For type safety, generate types with `supabase gen types typescript`. Use RLS (Row Level Security) policies for per-row authorization.",
+    "authentication": "Use supabase.auth.signInWithPassword() or signInWithOAuth(). Session is managed automatically. Access the current user with supabase.auth.getUser(). In Next.js, use @supabase/ssr for server-side session handling.",
+    "realtime": "Subscribe to table changes with supabase.channel('room').on('postgres_changes', ...).subscribe(). Use broadcast for presence features. Always unsubscribe on component unmount.",
+    "storage": "Use supabase.storage.from('bucket').upload() for file uploads. Generate signed URLs with createSignedUrl() for private files. Use upsert: true to overwrite existing files.",
+    "search": "Use PostgreSQL full-text search via .textSearch('column', 'query') in the Supabase client. For vector search (AI features), use pgvector extension with the match_documents RPC function."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cursor",
+  "name": "Cursor",
+  "version": "current",
+  "category": "ai-tool",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "prompt": "In Cursor Chat (Cmd+L), reference files with @filename to add them to context. Use @codebase for project-wide context. Cmd+K for inline edits — describe the change, not the implementation.",
+    "context": "Use .cursorrules file at project root for persistent instructions: coding style, framework conventions, what to avoid. Cursor reads this automatically on every request.",
+    "composer": "Cursor Composer (Cmd+Shift+I) handles multi-file changes. Describe the feature end-to-end and let Composer plan the changes. Review the diff before applying — Composer shows all affected files.",
+    "workflow": "For debugging: open the file with the error, highlight the broken code, press Cmd+K and describe what it should do instead. Paste error messages directly into Chat for root-cause analysis.",
+    "review": "Use Cursor's diff view to review all AI-generated changes before accepting. Reject individual file changes if incorrect. Ask Cursor to explain any change you do not understand before accepting."
+  }
+}

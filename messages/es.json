@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "tagline": "Di lo que quieres. En tecnología.",
+    "subtitle": "Convierte peticiones de funciones vagas en especificaciones técnicas precisas, listas para pegar en cualquier herramienta de IA."
+  },
+  "input": {
+    "placeholder": "Describe una función que quieres construir. p.ej. \"Que cargue más rápido\" o \"Añadir una búsqueda\"",
+    "submit": "Traducir",
+    "submitting": "Traduciendo..."
+  },
+  "context": {
+    "title": "Contexto técnico",
+    "description": "Opcional — selecciona tu stack para resultados más precisos",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de datos",
+    "aiTool": "Herramienta IA",
+    "none": "Ninguno",
+    "toggle": "Establecer contexto técnico"
+  },
+  "output": {
+    "title": "Especificación técnica",
+    "copySpec": "Copiar spec",
+    "copyPrompt": "Copiar prompt IA",
+    "copied": "¡Copiado!",
+    "terms": "Términos clave",
+    "scope": {
+      "label": "Alcance",
+      "small": "Pequeño",
+      "medium": "Medio",
+      "large": "Grande",
+      "smallHint": "Horas",
+      "mediumHint": "Días",
+      "largeHint": "Semanas"
+    }
+  },
+  "history": {
+    "title": "Historial de sesión",
+    "empty": "Aún no hay traducciones. Tu historial de sesión aparece aquí.",
+    "export": "Exportar sesión",
+    "clear": "Limpiar sesión",
+    "copyItem": "Copiar"
+  },
+  "nav": {
+    "language": "Idioma",
+    "github": "GitHub",
+    "tagline": "SpecTalk"
+  },
+  "errors": {
+    "empty": "Por favor, introduce una petición de función.",
+    "tooLong": "La petición es demasiado larga. Por favor, mantenla en menos de 1000 caracteres.",
+    "apiError": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "timeout": "La solicitud expiró. Por favor, inténtalo de nuevo."
+  }
+}

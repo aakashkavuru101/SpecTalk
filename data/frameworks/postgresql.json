@@ -1,0 +1,15 @@
+{
+  "id": "postgresql",
+  "name": "PostgreSQL",
+  "version": "17",
+  "category": "database",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "database": "Use Prisma ORM for type-safe queries. Define schema in schema.prisma, run `prisma migrate dev` to apply. For raw queries, use prisma.$queryRaw`SELECT ...`. Enable connection pooling with PgBouncer in production.",
+    "search": "Use PostgreSQL's built-in full-text search with to_tsvector() and to_tsquery(). Create a GIN index on the tsvector column for performance. For typo-tolerant search, use pg_trgm extension with GIN index.",
+    "migrations": "Use Prisma Migrate for schema changes. Each migration creates a timestamped SQL file in /prisma/migrations. Never edit migration files after applying — create a new migration instead.",
+    "performance": "Add indexes for frequently-queried columns. Use EXPLAIN ANALYZE to diagnose slow queries. Use partial indexes for filtered queries. Avoid N+1 queries — use Prisma's include or select for related data.",
+    "json": "Store flexible data in jsonb columns (not json — jsonb is indexed and faster). Query with -> operator for JSON object keys, ->> for text values. Index with GIN for full jsonb querying."
+  }
+}

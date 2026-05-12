@@ -1,0 +1,15 @@
+{
+  "id": "mongodb",
+  "name": "MongoDB",
+  "version": "7",
+  "category": "database",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "database": "Use Mongoose for schema definitions and type safety. Define schemas with mongoose.Schema(), register models with mongoose.model(). Use mongoose.connect() once at app startup — share the connection.",
+    "search": "Use MongoDB Atlas Search (built on Lucene) for full-text search — define a search index in the Atlas UI, then query with $search aggregation stage. For basic matching, use $text operator with a text index.",
+    "aggregation": "Use the aggregation pipeline for complex queries: $match (filter), $group (aggregate), $lookup (join), $project (shape output). Always put $match first to reduce document count early.",
+    "performance": "Create indexes with createIndex() or Mongoose's schema.index(). Use compound indexes for multi-field queries. Use lean() in Mongoose for read-only queries — returns plain JS objects, not Mongoose documents.",
+    "schema": "MongoDB is schema-flexible but use Mongoose schemas for consistency. Use SchemaType validators for required fields and types. Use schema.pre('save') hooks for data transformation before writes."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "v0",
+  "name": "v0 by Vercel",
+  "version": "current",
+  "category": "ai-tool",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "prompt": "v0 generates React components using shadcn/ui and Tailwind CSS by default. Describe the component's visual appearance and behavior. Include responsive requirements. Specify dark/light mode preference.",
+    "context": "v0 generates client components by default. Specify 'Server Component' if no client-side interactivity is needed. Mention the existing design system (shadcn/ui, colors, fonts) to get consistent output.",
+    "workflow": "Iterate: generate a component, then refine with follow-up prompts ('make the button larger', 'add a loading state', 'use a grid layout on desktop'). v0 remembers conversation context.",
+    "integration": "Copy v0-generated code into /components/ in your project. Install any missing shadcn/ui components with `pnpm dlx shadcn@latest add [component]`. v0 output is production-ready React with TypeScript.",
+    "limitations": "v0 does not generate backend logic, database queries, or API routes. Use v0 for UI components only. For full-stack features, use Claude Code or Cursor after scaffolding the UI with v0."
+  }
+}

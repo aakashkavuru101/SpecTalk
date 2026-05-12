@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "tagline": "Say what you mean. In tech.",
+    "subtitle": "Translate vague feature requests into precise technical specifications — ready to paste into any AI coding tool."
+  },
+  "input": {
+    "placeholder": "Describe a feature you want to build. e.g. \"Make it load faster\" or \"Add a search\"",
+    "submit": "Translate",
+    "submitting": "Translating..."
+  },
+  "context": {
+    "title": "Tech context",
+    "description": "Optional — select your stack for more accurate output",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "aiTool": "AI tool target",
+    "none": "None",
+    "toggle": "Set tech context"
+  },
+  "output": {
+    "title": "Technical specification",
+    "copySpec": "Copy spec",
+    "copyPrompt": "Copy AI prompt",
+    "copied": "Copied!",
+    "terms": "Key terms",
+    "scope": {
+      "label": "Scope",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "smallHint": "Hours",
+      "mediumHint": "Days",
+      "largeHint": "Weeks"
+    }
+  },
+  "history": {
+    "title": "Session history",
+    "empty": "No translations yet. Your session history appears here.",
+    "export": "Export session",
+    "clear": "Clear session",
+    "copyItem": "Copy"
+  },
+  "nav": {
+    "language": "Language",
+    "github": "GitHub",
+    "tagline": "SpecTalk"
+  },
+  "errors": {
+    "empty": "Please enter a feature request.",
+    "tooLong": "Request is too long. Please keep it under 1000 characters.",
+    "apiError": "Something went wrong. Please try again.",
+    "timeout": "Request timed out. Please try again."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "claude-code",
+  "name": "Claude Code",
+  "version": "current",
+  "category": "ai-tool",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "prompt": "Claude Code works best with precise, scoped instructions. Specify the file path, the exact behavior expected, and any constraints (e.g. 'do not modify the database schema'). One task per prompt for complex changes.",
+    "context": "Use CLAUDE.md at the project root to give Claude Code persistent context: tech stack, coding conventions, and what not to touch. Reference specific files in your prompt for targeted edits.",
+    "workflow": "For large features: break into steps and confirm each step before continuing. Use 'Add X to Y without changing Z' patterns. For debugging: paste the exact error message and file path.",
+    "review": "After Claude Code makes changes, review with git diff before accepting. Ask Claude Code to explain changes you do not understand. Use 'undo last change' if output is unexpected.",
+    "safety": "Tell Claude Code explicitly what is out of scope: 'do not change the API contract', 'do not rename existing functions'. Scope instructions prevent unintended cascading changes."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "mysql",
+  "name": "MySQL",
+  "version": "8",
+  "category": "database",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "database": "Use Prisma ORM with MySQL datasource provider. Alternatively, use Drizzle ORM for a lighter type-safe option. Use connection pooling — in serverless environments, use PlanetScale (MySQL-compatible) which handles pooling automatically.",
+    "search": "Use MySQL FULLTEXT indexes on text columns with MATCH() AGAINST() syntax. For production full-text needs, prefer Algolia or Elasticsearch as MySQL's full-text search has limited relevance tuning.",
+    "migrations": "Use Prisma Migrate for schema evolution. Each migration generates a SQL file. In production, use `prisma migrate deploy` (not dev). Never drop columns without a multi-step migration if data must be preserved.",
+    "performance": "Add indexes with INDEX or UNIQUE INDEX on frequently filtered/sorted columns. Use EXPLAIN to analyze query execution plans. Use query caching at the application layer (Redis) for expensive read queries.",
+    "json": "MySQL 8 supports native JSON columns. Query with JSON_EXTRACT() or the -> operator shorthand. Index specific JSON paths with generated columns + index for performance."
+  }
+}

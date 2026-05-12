@@ -1,0 +1,15 @@
+{
+  "id": "your-framework-id",
+  "name": "Framework Display Name",
+  "version": "1.0",
+  "category": "frontend",
+  "maintainer": "community",
+  "lastUpdated": "2026-05-12",
+  "vocab": {
+    "search": "How to implement search in this framework — use specific API names and patterns that actually exist.",
+    "loading": "How to handle loading states — use framework-specific primitives.",
+    "authentication": "How to handle auth — name the actual libraries/patterns used.",
+    "database": "How to connect to a database from this framework.",
+    "api": "How to create or consume APIs — name the actual patterns."
+  }
+}
