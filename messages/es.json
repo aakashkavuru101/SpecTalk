@@ -50,6 +50,19 @@
     "empty": "Por favor, introduce una petición de función.",
     "tooLong": "La petición es demasiado larga. Por favor, mantenla en menos de 1000 caracteres.",
     "apiError": "Algo salió mal. Por favor, inténtalo de nuevo.",
-    "timeout": "La solicitud expiró. Por favor, inténtalo de nuevo."
+    "timeout": "La solicitud expiró. Por favor, inténtalo de nuevo.",
+    "noApiKey": "No hay clave API configurada. Abre los ajustes del proveedor (icono de engranaje) para añadir una."
+  },
+  "provider": {
+    "title": "Proveedor IA",
+    "label": "Proveedor",
+    "apiKey": "Clave API",
+    "apiKeyPlaceholder": "sk-...",
+    "ollamaUrl": "URL de Ollama",
+    "ollamaUrlPlaceholder": "http://localhost:11434",
+    "model": "Modelo (opcional)",
+    "modelPlaceholder": "Dejar en blanco para el predeterminado",
+    "save": "Guardar",
+    "saved": "¡Guardado!"
   }
 }

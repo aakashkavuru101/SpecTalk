@@ -1,5 +1,20 @@
 export type SupportedLocale = "en" | "ja" | "es" | "fr";
 
+export type ProviderId =
+  | "anthropic"
+  | "openai"
+  | "groq"
+  | "google"
+  | "openrouter"
+  | "ollama";
+
+export type ProviderSettings = {
+  provider: ProviderId;
+  apiKey?: string;
+  ollamaUrl?: string;
+  model?: string;
+};
+
 export type Framework = {
   id: string;
   name: string;

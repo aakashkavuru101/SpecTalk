@@ -50,6 +50,19 @@
     "empty": "機能リクエストを入力してください。",
     "tooLong": "リクエストが長すぎます。1000文字以内にしてください。",
     "apiError": "エラーが発生しました。もう一度お試しください。",
-    "timeout": "タイムアウトしました。もう一度お試しください。"
+    "timeout": "タイムアウトしました。もう一度お試しください。",
+    "noApiKey": "APIキーが設定されていません。設定（歯車アイコン）を開いて追加してください。"
+  },
+  "provider": {
+    "title": "AIプロバイダー",
+    "label": "プロバイダー",
+    "apiKey": "APIキー",
+    "apiKeyPlaceholder": "sk-...",
+    "ollamaUrl": "Ollama URL",
+    "ollamaUrlPlaceholder": "http://localhost:11434",
+    "model": "モデル（任意）",
+    "modelPlaceholder": "空白でデフォルトを使用",
+    "save": "保存",
+    "saved": "保存しました！"
   }
 }

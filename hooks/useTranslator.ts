@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { useLocale } from "next-intl";
 import { addToSession, getSession, clearSession } from "@/lib/session";
+import { getProviderSettings } from "@/lib/providerSettings";
 import type { TechContext, SpecOutput, SessionEntry, SupportedLocale } from "@/types";
 
 interface TranslatorState {
@@ -53,6 +54,7 @@ export function useTranslator() {
     setState((s) => ({ ...s, isLoading: true, error: null }));
 
     try {
+      const providerSettings = getProviderSettings();
       const res = await fetch("/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -60,6 +62,10 @@ export function useTranslator() {
           request: input.trim(),
           language: locale,
           context: Object.keys(context).length > 0 ? context : undefined,
+          provider: providerSettings.provider,
+          apiKey: providerSettings.apiKey,
+          ollamaUrl: providerSettings.ollamaUrl,
+          model: providerSettings.model,
         }),
         signal: AbortSignal.timeout(15000),
       });
@@ -83,8 +89,11 @@ export function useTranslator() {
       const history = addToSession(entry);
       setState((s) => ({ ...s, output, history, isLoading: false }));
     } catch (err: unknown) {
-      const msg =
-        err instanceof Error && err.name === "TimeoutError" ? "timeout" : "apiError";
+      let msg = "apiError";
+      if (err instanceof Error) {
+        if (err.name === "TimeoutError") msg = "timeout";
+        else if (err.message.toLowerCase().includes("api key")) msg = "noApiKey";
+      }
       setState((s) => ({ ...s, isLoading: false, error: msg }));
     }
   }, [state, locale]);

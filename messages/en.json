@@ -50,6 +50,19 @@
     "empty": "Please enter a feature request.",
     "tooLong": "Request is too long. Please keep it under 1000 characters.",
     "apiError": "Something went wrong. Please try again.",
-    "timeout": "Request timed out. Please try again."
+    "timeout": "Request timed out. Please try again.",
+    "noApiKey": "No API key configured. Open the provider settings (gear icon) to add one."
+  },
+  "provider": {
+    "title": "AI Provider",
+    "label": "Provider",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "sk-...",
+    "ollamaUrl": "Ollama URL",
+    "ollamaUrlPlaceholder": "http://localhost:11434",
+    "model": "Model (optional)",
+    "modelPlaceholder": "Leave blank for default",
+    "save": "Save",
+    "saved": "Saved!"
   }
 }

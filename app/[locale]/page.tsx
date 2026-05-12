@@ -9,6 +9,7 @@ import { ContextSelector } from "@/components/ContextSelector";
 import { TranslatorInput } from "@/components/TranslatorInput";
 import { OutputPanel } from "@/components/OutputPanel";
 import { HistoryPanel } from "@/components/HistoryPanel";
+import { ProviderSelector } from "@/components/ProviderSelector";
 import { useTranslator } from "@/hooks/useTranslator";
 
 export default function Home() {
@@ -35,15 +36,18 @@ export default function Home() {
         <span className="font-[family-name:var(--font-sora)] font-semibold text-sm tracking-tight text-foreground">
           {t("tagline")}
         </span>
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <GitFork size={14} />
-          {t("github")}
-        </a>
+        <div className="flex items-center gap-4">
+          <ProviderSelector />
+          <a
+            href="https://github.com/aakashkavuru101/SpecTalk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <GitFork size={14} />
+            {t("github")}
+          </a>
+        </div>
       </nav>
 
       {/* Hero 1 — Ethereal Shadow (full height) */}
