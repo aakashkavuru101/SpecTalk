@@ -70,4 +70,31 @@ describe("parseOutput", () => {
     const result = parseOutput(raw);
     expect(result.copyReady).toBe("my spec");
   });
+
+  it("coerces spec array-of-strings to newline-joined text", () => {
+    const raw = JSON.stringify({
+      spec: ["1. Step one", "2. Step two", "3. Step three"],
+      terms: [],
+      scope: "medium",
+      copyReady: "Do it",
+    });
+    const result = parseOutput(raw);
+    expect(result.spec).toBe("1. Step one\n2. Step two\n3. Step three");
+  });
+
+  it("coerces spec array-of-objects to readable text", () => {
+    const raw = JSON.stringify({
+      spec: [
+        { step: "1", description: "Create the file" },
+        { step: "2", description: "Add the component" },
+      ],
+      terms: [],
+      scope: "small",
+      copyReady: "Do it",
+    });
+    const result = parseOutput(raw);
+    expect(result.spec).toContain("Create the file");
+    expect(result.spec).toContain("Add the component");
+    expect(result.spec).not.toContain("[object Object]");
+  });
 });

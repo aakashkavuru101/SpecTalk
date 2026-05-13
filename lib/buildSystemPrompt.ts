@@ -29,7 +29,7 @@ Field rules:
 
 "summary": 2-3 sentences in plain English. Explain what this feature DOES for the end user — not how it works technically. Use zero jargon. Write as if explaining to someone who has never written code. Focus entirely on the user-facing outcome and why it matters.
 
-"spec": Detailed technical specification. Must include:
+"spec": A single plain string (NOT an array). Write numbered steps directly in the string using "1. …\n2. …\n3. …" format. Must include:
 1. Numbered implementation steps
 2. Exact file paths or locations where changes belong
 3. Real, existing API names, method names, hooks, and library names
