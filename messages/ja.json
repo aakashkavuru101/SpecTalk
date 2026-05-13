@@ -29,9 +29,9 @@
       "small": "小",
       "medium": "中",
       "large": "大",
-      "smallHint": "数時間",
-      "mediumHint": "数日",
-      "largeHint": "数週間"
+      "smallHint": "〜1時間",
+      "mediumHint": "〜4時間",
+      "largeHint": "1〜2日"
     }
   },
   "history": {

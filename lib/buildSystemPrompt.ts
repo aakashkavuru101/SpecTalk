@@ -39,7 +39,7 @@ Be specific enough that a developer or AI tool can start immediately without fol
 
 "terms": 3-5 technical terms from the spec a non-developer would not recognise. Every definition must be plain English with zero jargon — explain the concept, not the word.
 
-"scope": Complexity estimate only. small = a few hours, medium = 1-3 days, large = a week or more.
+"scope": Complexity estimate for AI-assisted development (using tools like Claude Code, Cursor, or v0). small = under 1 hour, medium = a few hours to half a day, large = 1-3 days. Never say "weeks" — modern AI coding tools compress timelines dramatically.
 
 "copyReady": The spec rewritten as a single direct instruction for an AI coding tool. Must start with an imperative verb (Implement / Add / Create / Refactor). Must be copy-pasteable with zero editing.
 

@@ -29,9 +29,9 @@
       "small": "Small",
       "medium": "Medium",
       "large": "Large",
-      "smallHint": "Hours",
-      "mediumHint": "Days",
-      "largeHint": "Weeks"
+      "smallHint": "< 1 hr",
+      "mediumHint": "~4 hrs",
+      "largeHint": "1–2 days"
     }
   },
   "history": {
